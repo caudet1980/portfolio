@@ -24,7 +24,7 @@
                 <li class="nav-item"><a href="#projects" class="navbar-link" data-i18n="header.nav.projects"></a></li> 
                 <li class="nav-item"><a href="#skills" class="navbar-link" data-i18n="header.nav.skills"></a></li>
                 <li class="nav-item"><a href="#contact" class="navbar-link" data-i18n="header.nav.contact"></a></li>
-                <li><button id="language-select" class="nav-item btn btn-sm color-text-secondary bkg-color-bg-surface border-color" data-i18n="header.nav.lang" value=""></button></li>
+                <li><button id="language-select" class="nav-item btn btn-sm color-text-secondary bkg-color-bg-surface border-color">EN</button></li>
               </ul>    
           </div>
         </nav>
@@ -33,8 +33,9 @@
 
     <main class="px-1">
       <section id="intro" class="intro container px-0 py-4 border-bottom border-color">
-        <h1 data-i18n="intro.title"></h1>
-        <h2 data-i18n="intro.subtitle"></h2>
+        <h1 data-i18n="intro.name"></h1>
+        <h2 data-i18n="intro.title"></h2>
+        <h3 class="text-h2" data-i18n="intro.subtitle"></h3>
         <p class="color-text-secondary m-0" data-i18n="intro.summary1"></p>
         <p class="color-text-secondary" data-i18n="intro.summary2"></p>
         <ul class="d-flex flex-wrap gap-2 chips-list text-uppercase">
@@ -54,19 +55,19 @@
         <ul class="stats-list d-flex gap-4 px-0">
           <li class="stat-item card bkg-color-bg-card p-1 m-0">
             <div class="card-body">
-              <h5 class="stat-label text-h3 color-text-primary" data-i18n="stats.experience.label"></h5>
+              <h5 class="stat-label text-sm color-text-secondary" data-i18n="stats.experience.label"></h5>
               <p class="stat-value text-2xl accent font-weight-bold m-0" data-i18n="stats.experience.value"></p>
             </div>
           </li>
           <li class="stat-item card bkg-color-bg-card p-1 m-0">
               <div class="card-body">
-              <h5 class="stat-label text-h3 color-text-primary" data-i18n="stats.training.label"></h5>
+              <h5 class="stat-label text-sm color-text-secondary" data-i18n="stats.training.label"></h5>
                 <p class="stat-value text-2xl accent font-weight-bold m-0" data-i18n="stats.training.value"></p>
               </div>
           </li>
           <li class="stat-item card bkg-color-bg-card p-1 m-0">
             <div class="card-body">
-              <h5 class="stat-label text-h3 color-text-primary" data-i18n="stats.technologies.label"></h5>
+              <h5 class="stat-label text-sm color-text-secondary" data-i18n="stats.technologies.label"></h5>
               <p class="stat-value text-2xl accent font-weight-bold m-0" data-i18n="stats.technologies.value"></p>
             </div>
           </li>
@@ -77,10 +78,10 @@
         <h2 class="text-h4 text-uppercase font-weight-light color-text-secondary mb-4" data-i18n="projects.title"></h2>
 
         <h3 class="text-h4 color-text-secondary border-bottom border-color pb-2 mb-3" data-i18n="projects.pro"></h3>
-        <ul class="projects-grid row">
+        <div class="projects-grid row align-items-stretch">
 
-          <li class="col-6 project-card project-card--featured d-flex flex-column justify-content-between">
-            <div class="card bkg-color-bg-card px-4 py-2 m-0 rounded">
+          <div class="col-6 project-card project-card--featured d-flex flex-column justify-content-between">
+            <div class="card bkg-color-bg-card px-4 py-2 m-0 rounded h-100">
               <div class="card-body d-flex flex-column justify-content-between">
                 <div class="project-card__header d-flex justify-content-between">
                     <h4 class="text-h3 text-normal color-text-primary" data-i18n="projects.survey.title"></h4>
@@ -96,13 +97,13 @@
                 </ul>
               </div>
             </div>
-          </li>
+          </div>
 
-          <li class="col-6 project-card project-card--featured">
-            <div class="card bkg-color-bg-card px-4 py-2 m-0 rounded">
+          <div class="col-6 project-card project-card--featured">
+            <div class="card bkg-color-bg-card px-4 py-2 m-0 rounded h-100">
               <div class="card-body d-flex flex-column justify-content-between">
                 <div class="project-card__header d-flex justify-content-between align-items-start">
-                    <h4 class="text-h3 text-normal color-text-primary" data-i18n="projects.hr.title"></h4>
+                    <h4 class="text-h3 color-text-primary" data-i18n="projects.hr.title"></h4>
                     <span class="chip chip--epsi">EPSI</span>
                 </div>
                 <p class="color-text-secondary" data-i18n="projects.hr.description"></p>
@@ -114,19 +115,19 @@
                   </ul>
               </div>
             </div>
-          </li>
+          </div>
 
-        </ul>
+        </div>
 
         <h3 class="text-h4 color-text-secondary border-bottom border-color pb-2 my-3" data-i18n="projects.personal"></h3>
-        <ul class="projects-grid row">
+        <div class="projects-grid row align-items-stretch">
 
-          <li class="col-6 project-card">
-            <div class="card bkg-color-bg-card px-4 py-2 m-0 rounded">
+          <div class="col-6 project-card">
+            <div class="card bkg-color-bg-card px-4 py-2 m-0 rounded h-100">
               <div class="card-body d-flex flex-column justify-content-between">
                 <div class="project-card__header d-flex justify-content-between">
                     <h4 class="text-h3 text-normal color-text-primary" data-i18n="projects.portfolio.title"></h4>
-                    <a href="https://github.com/ton-username/portfolio"
+                    <a href="https://caudet1980.github.io/portfolio/"
                       class="chip chip--github" target="_blank">
                       GitHub ↗
                     </a>
@@ -141,16 +142,16 @@
                 </ul>
               </div>
             </div>
-          </li>
-        </ul>
+          </div>
+        </div>
     </section>
       <section id="skills" class="container px-0 py-4">
         <h2 class="text-h4 text-uppercase font-weight-light color-text-secondary" data-i18n="skills.title"></h2>
 
-        <ul class="row g-3">
+        <div class="row g-3">
 
-            <li class="col-4">
-                <div class="card skill-group bkg-color-bg-card p-3 rounded">
+            <div class="col-4">
+                <div class="card skill-group bkg-color-bg-card p-3 rounded  h-100">
                     <h4 class="text-uppercase" data-i18n="skills.backend"></h4>
                     <ul class="chips-list d-flex flex-wrap gap-2">
                         <li class="chip chip--mono">.NET / C#</li>
@@ -161,10 +162,10 @@
                         <li class="chip chip--mono">PowerShell</li>
                     </ul>
                 </div>
-            </li>
+            </div>
 
-            <li class="col-4">
-                <div class="card skill-group bkg-color-bg-card p-3 rounded">
+            <div class="col-4">
+                <div class="card skill-group bkg-color-bg-card p-3 rounded h-100">
                     <h4 class="text-uppercase" data-i18n="skills.frontend"></h4>
                     <ul class="chips-list d-flex flex-wrap gap-2">
                         <li class="chip chip--mono">Angular</li>
@@ -175,10 +176,10 @@
                         <li class="chip chip--mono">CSS / Sass</li>
                     </ul>
                 </div>
-            </li>
+            </div>
 
-            <li class="col-4">
-                <div class="card skill-group bkg-color-bg-card p-3 rounded">
+            <div class="col-4">
+                <div class="card skill-group bkg-color-bg-card p-3 rounded h-100">
                     <h4 class="text-uppercase" data-i18n="skills.tools"></h4>
                     <ul class="chips-list d-flex flex-wrap gap-2">
                         <li class="chip chip--mono">Git</li>
@@ -189,9 +190,9 @@
                         <li class="chip chip--mono">NPOI</li>
                     </ul>
                 </div>
-            </li>
+            </div>
 
-        </ul>
+        </div>
       </section>
       <section id="contact" class="container border-top px-0 py-4">
         <h2 class="text-h4 text-uppercase font-weight-light color-text-secondary" data-i18n="contact.title"></h2>
@@ -199,7 +200,7 @@
         <div class="row g-3">
 
             <div class="col-auto">
-                <a href="https://github.com/ton-username"
+                <a href="https://github.com/caudet1980"
                   target="_blank"
                   class="btn btn-sm color-text-secondary bkg-color-bg-surface border-color">
                     GitHub
@@ -207,7 +208,7 @@
             </div>
 
             <div class="col-auto">
-                <a href="https://linkedin.com/in/ton-profil"
+                <a href="https://www.linkedin.com/in/catherineaudet/"
                   target="_blank"
                   class="btn btn-sm color-text-secondary bkg-color-bg-surface border-color">
                     LinkedIn
