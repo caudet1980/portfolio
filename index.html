@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="intro.title">Catherine Audet</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <header class="px-4">     
+      <div class="container border-bottom border-color px-0 py-2">
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" data-i18n="header.name"></a>
+              <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+              <ul class="navbar-nav ms-auto align-items-center gap-3">
+                <li class="nav-item"><a href="#projects" class="navbar-link" data-i18n="header.nav.projects"></a></li> 
+                <li class="nav-item"><a href="#skills" class="navbar-link" data-i18n="header.nav.skills"></a></li>
+                <li class="nav-item"><a href="#contact" class="navbar-link" data-i18n="header.nav.contact"></a></li>
+                <li><button id="language-select" class="nav-item btn btn-sm color-text-secondary bkg-color-bg-surface border-color" data-i18n="header.nav.lang" value=""></button></li>
+              </ul>    
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="px-1">
+      <section id="intro" class="intro container px-0 py-4 border-bottom border-color">
+        <h1 data-i18n="intro.title"></h1>
+        <h2 data-i18n="intro.subtitle"></h2>
+        <p class="color-text-secondary m-0" data-i18n="intro.summary1"></p>
+        <p class="color-text-secondary" data-i18n="intro.summary2"></p>
+        <ul class="d-flex flex-wrap gap-2 chips-list text-uppercase">
+          <li class="chip chip--dotnet">.NET / C#</li>
+          <li class="chip chip--angular">Angular</li>
+          <li class="chip chip--php">PHP</li>
+          <li class="chip chip--react">React ↗</li>
+          <li class="chip chip--web">HTML · CSS · JS</li>
+        </ul>
+        <p class="d-flex gap-4 pt-4 text-sm font-weight-bold">
+          <a href="#projects" class="btn bkg-color-text-primary px-4 py-1 rounded-3 font-weight-bold" data-i18n="intro.cta_projects"></a>
+          <a href="#contact" class="btn color-text-primary bkg-color-bg-surface px-4 py-1 rounded-3 border-color font-weight-bold" data-i18n="intro.cta_contact"></a>
+        </p>
+      </section>
+      <section id="stats" class="container px-0 p-4 border-bottom border-color">
+        <h2 class="text-h4 text-uppercase font-weight-light color-text-secondary" data-i18n="stats.title"></h2>
+        <ul class="stats-list d-flex gap-4 px-0">
+          <li class="stat-item card bkg-color-bg-card p-1 m-0">
+            <div class="card-body">
+              <h5 class="stat-label text-h3 color-text-primary" data-i18n="stats.experience.label"></h5>
+              <p class="stat-value text-2xl accent font-weight-bold m-0" data-i18n="stats.experience.value"></p>
+            </div>
+          </li>
+          <li class="stat-item card bkg-color-bg-card p-1 m-0">
+              <div class="card-body">
+              <h5 class="stat-label text-h3 color-text-primary" data-i18n="stats.training.label"></h5>
+                <p class="stat-value text-2xl accent font-weight-bold m-0" data-i18n="stats.training.value"></p>
+              </div>
+          </li>
+          <li class="stat-item card bkg-color-bg-card p-1 m-0">
+            <div class="card-body">
+              <h5 class="stat-label text-h3 color-text-primary" data-i18n="stats.technologies.label"></h5>
+              <p class="stat-value text-2xl accent font-weight-bold m-0" data-i18n="stats.technologies.value"></p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="projects" class="container border-bottom border-color px-0 py-4">
+        <h2 class="text-h4 text-uppercase font-weight-light color-text-secondary mb-4" data-i18n="projects.title"></h2>
+
+        <h3 class="text-h4 color-text-secondary border-bottom border-color pb-2 mb-3" data-i18n="projects.pro"></h3>
+        <ul class="projects-grid row">
+
+          <li class="col-6 project-card project-card--featured d-flex flex-column justify-content-between">
+            <div class="card bkg-color-bg-card px-4 py-2 m-0 rounded">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <div class="project-card__header d-flex justify-content-between">
+                    <h4 class="text-h3 text-normal color-text-primary" data-i18n="projects.survey.title"></h4>
+                    <span class="chip chip--epsi">EPSI</span>
+                </div>
+                <p class="color-text-secondary" data-i18n="projects.survey.description"></p>
+                <ul class="d-flex flex-wrap gap-2 chips-list">
+                    <li class="chip chip--mono">.NET / C#</li>
+                    <li class="chip chip--mono">Angular</li>
+                    <li class="chip chip--mono">SQL Server</li>
+                    <li class="chip chip--mono">Entity Framework</li>
+                    <li class="chip chip--mono">NPOI</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="col-6 project-card project-card--featured">
+            <div class="card bkg-color-bg-card px-4 py-2 m-0 rounded">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <div class="project-card__header d-flex justify-content-between align-items-start">
+                    <h4 class="text-h3 text-normal color-text-primary" data-i18n="projects.hr.title"></h4>
+                    <span class="chip chip--epsi">EPSI</span>
+                </div>
+                <p class="color-text-secondary" data-i18n="projects.hr.description"></p>
+                <ul class="d-flex flex-wrap gap-2 chips-list">
+                    <li class="chip chip--mono">.NET / C#</li>
+                    <li class="chip chip--mono">SQL Server</li>
+                    <li class="chip chip--mono">Entity Framework</li>
+                    <li class="chip chip--mono">NPOI</li>
+                  </ul>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+
+        <h3 class="text-h4 color-text-secondary border-bottom border-color pb-2 my-3" data-i18n="projects.personal"></h3>
+        <ul class="projects-grid row">
+
+          <li class="col-6 project-card">
+            <div class="card bkg-color-bg-card px-4 py-2 m-0 rounded">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <div class="project-card__header d-flex justify-content-between">
+                    <h4 class="text-h3 text-normal color-text-primary" data-i18n="projects.portfolio.title"></h4>
+                    <a href="https://github.com/ton-username/portfolio"
+                      class="chip chip--github" target="_blank">
+                      GitHub ↗
+                    </a>
+                </div>
+                <p class="color-text-secondary" data-i18n="projects.portfolio.description"></p>
+                <ul class="chips-list d-flex flex-wrap gap-2">
+                    <li class="chip chip--mono">HTML</li>
+                    <li class="chip chip--mono">CSS</li>
+                    <li class="chip chip--mono">JS</li>
+                    <li class="chip chip--mono">JSON</li>
+                    <li class="chip chip--mono">Bootstrap</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+    </section>
+      <section id="skills" class="container px-0 py-4">
+        <h2 class="text-h4 text-uppercase font-weight-light color-text-secondary" data-i18n="skills.title"></h2>
+
+        <ul class="row g-3">
+
+            <li class="col-4">
+                <div class="card skill-group bkg-color-bg-card p-3 rounded">
+                    <h4 class="text-uppercase" data-i18n="skills.backend"></h4>
+                    <ul class="chips-list d-flex flex-wrap gap-2">
+                        <li class="chip chip--mono">.NET / C#</li>
+                        <li class="chip chip--mono">PHP</li>
+                        <li class="chip chip--mono">SQL Server</li>
+                        <li class="chip chip--mono">Entity Framework</li>
+                        <li class="chip chip--mono">API REST</li>
+                        <li class="chip chip--mono">PowerShell</li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="col-4">
+                <div class="card skill-group bkg-color-bg-card p-3 rounded">
+                    <h4 class="text-uppercase" data-i18n="skills.frontend"></h4>
+                    <ul class="chips-list d-flex flex-wrap gap-2">
+                        <li class="chip chip--mono">Angular</li>
+                        <li class="chip chip--mono">React</li>
+                        <li class="chip chip--mono">JavaScript</li>
+                        <li class="chip chip--mono">TypeScript</li>
+                        <li class="chip chip--mono">HTML</li>
+                        <li class="chip chip--mono">CSS / Sass</li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="col-4">
+                <div class="card skill-group bkg-color-bg-card p-3 rounded">
+                    <h4 class="text-uppercase" data-i18n="skills.tools"></h4>
+                    <ul class="chips-list d-flex flex-wrap gap-2">
+                        <li class="chip chip--mono">Git</li>
+                        <li class="chip chip--mono">Azure</li>
+                        <li class="chip chip--mono">DevOps</li>
+                        <li class="chip chip--mono">Agile</li>
+                        <li class="chip chip--mono">WordPress</li>
+                        <li class="chip chip--mono">NPOI</li>
+                    </ul>
+                </div>
+            </li>
+
+        </ul>
+      </section>
+      <section id="contact" class="container border-top px-0 py-4">
+        <h2 class="text-h4 text-uppercase font-weight-light color-text-secondary" data-i18n="contact.title"></h2>
+
+        <div class="row g-3">
+
+            <div class="col-auto">
+                <a href="https://github.com/ton-username"
+                  target="_blank"
+                  class="btn btn-sm color-text-secondary bkg-color-bg-surface border-color">
+                    GitHub
+                </a>
+            </div>
+
+            <div class="col-auto">
+                <a href="https://linkedin.com/in/ton-profil"
+                  target="_blank"
+                  class="btn btn-sm color-text-secondary bkg-color-bg-surface border-color">
+                    LinkedIn
+                </a>
+            </div>
+
+            <div class="col-auto">
+                <a href="mailto:cath_80@hotmail.com"
+                  class="btn btn-sm color-text-secondary bkg-color-bg-surface border-color">
+                    cath_80@hotmail.com
+                </a>
+            </div>
+
+        </div>
+    </section>
+    </main>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

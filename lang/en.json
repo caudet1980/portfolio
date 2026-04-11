@@ -1,0 +1,63 @@
+{
+    "header": {
+        "name": "Catherine Audet",
+        "nav": {
+            "projects": "Projects",
+            "skills": "Skills",
+            "contact": "Contact",
+            "lang": "FR"
+        }
+    },
+    "intro": {
+        "title": "Catherine Audet - Senior Full Stack Developer",
+        "subtitle": "10 years of code. From backend to frontend.",
+        "summary1": "Senior full stack developer with 10+ years of experience, I build applications from API to interface.",
+        "summary2": "I continuously upskill to stay current with the industry.",
+        "cta_projects": "View my projects",
+        "cta_contact": "Contact me"
+    },
+    "stats": {
+        "title": "By the numbers",
+        "experience": {
+            "label": "Years of experience",
+            "value": "10+"
+        },
+        "training": {
+            "label": "Continuous training",
+            "value": "10+"
+        },
+        "technologies": {
+            "label": "Languages & frameworks",
+            "value": "12+"
+        }
+    },
+    "projects": {
+        "title": "Projects",
+        "pro": "Professional",
+        "personal": "Personal",
+        "survey": {
+            "title": "Survey platform",
+            "description": "Employee engagement platform — new features, security compliance, unit tests and full documentation."
+        },
+        "hr": {
+            "title": "HR platform",
+            "description": "Backend of a complete HR platform — psychometric tests, competency profiles and interview guides. Integration tools and unit tests."
+        },
+        "portfolio": {
+            "title": "Personal portfolio",
+            "description": "Bilingual FR/EN portfolio in vanilla JS — JSON translation system, language toggle, dark mode."
+        }
+    },
+    "skills": {
+        "title": "Skills",
+        "backend": "Backend",
+        "frontend": "Frontend",
+        "tools": "Tools & DevOps"
+    },
+    "contact": {
+        "title": "Contact"
+    },
+    "footer": {
+        "rights": "All rights reserved"
+    }
+}
