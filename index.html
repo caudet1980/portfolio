@@ -3,17 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title data-i18n="intro.title">Catherine Audet</title>
+    <title>Catherine Audet</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-
+    <div class="accent-bar"></div>
     <header class="px-4">     
       <div class="container border-bottom border-color px-0 py-2">
 
         <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" data-i18n="header.name"></a>
+            <a class="navbar-brand">Catherine Audet</a>
               <button class="navbar-toggler" type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#navMenu">
@@ -32,10 +32,10 @@
     </header>
 
     <main class="px-1">
-      <section id="intro" class="intro container px-0 py-4 border-bottom border-color">
-        <h1 data-i18n="intro.name"></h1>
+      <section id="intro" class="intro container px-0 py-5 border-bottom border-color">
+        <h1>Catherine Audet</h1>
         <h2 data-i18n="intro.title"></h2>
-        <h3 class="text-h2" data-i18n="intro.subtitle"></h3>
+        <h3 data-i18n="intro.subtitle"></h3>
         <p class="color-text-secondary m-0" data-i18n="intro.summary1"></p>
         <p class="color-text-secondary" data-i18n="intro.summary2"></p>
         <ul class="d-flex flex-wrap gap-2 chips-list text-uppercase">
@@ -50,22 +50,22 @@
           <a href="#contact" class="btn color-text-primary bkg-color-bg-surface px-4 py-1 rounded-3 border-color font-weight-bold" data-i18n="intro.cta_contact"></a>
         </p>
       </section>
-      <section id="stats" class="container px-0 p-4 border-bottom border-color">
-        <h2 class="text-h4 text-uppercase font-weight-light color-text-secondary" data-i18n="stats.title"></h2>
+      <section id="stats" class="container px-0 py-4 border-bottom border-color">
+        <h2 class="text-xs text-uppercase font-weight-light color-text-secondary" data-i18n="stats.title"></h2>
         <ul class="stats-list d-flex gap-4 px-0">
-          <li class="stat-item card bkg-color-bg-card p-1 m-0">
+          <li class="stat-item card bkg-color-bg-card px-3 py-2 m-0">
             <div class="card-body">
               <h5 class="stat-label text-sm color-text-secondary" data-i18n="stats.experience.label"></h5>
               <p class="stat-value text-2xl accent font-weight-bold m-0" data-i18n="stats.experience.value"></p>
             </div>
           </li>
-          <li class="stat-item card bkg-color-bg-card p-1 m-0">
+          <li class="stat-item card bkg-color-bg-card px-3 py-2 m-0">
               <div class="card-body">
               <h5 class="stat-label text-sm color-text-secondary" data-i18n="stats.training.label"></h5>
                 <p class="stat-value text-2xl accent font-weight-bold m-0" data-i18n="stats.training.value"></p>
               </div>
           </li>
-          <li class="stat-item card bkg-color-bg-card p-1 m-0">
+          <li class="stat-item card bkg-color-bg-card px-3 py-2 m-0">
             <div class="card-body">
               <h5 class="stat-label text-sm color-text-secondary" data-i18n="stats.technologies.label"></h5>
               <p class="stat-value text-2xl accent font-weight-bold m-0" data-i18n="stats.technologies.value"></p>
@@ -75,19 +75,19 @@
       </section>
 
       <section id="projects" class="container border-bottom border-color px-0 py-4">
-        <h2 class="text-h4 text-uppercase font-weight-light color-text-secondary mb-4" data-i18n="projects.title"></h2>
+        <h2 class="text-xs text-uppercase font-weight-light color-text-secondary mb-4" data-i18n="projects.title"></h2>
 
-        <h3 class="text-h4 color-text-secondary border-bottom border-color pb-2 mb-3" data-i18n="projects.pro"></h3>
+        <h3 class="text-xs text-normal color-text-secondary border-bottom border-color pb-2 mb-3" data-i18n="projects.pro"></h3>
         <div class="projects-grid row align-items-stretch">
 
-          <div class="col-6 project-card project-card--featured d-flex flex-column justify-content-between">
+          <div class="col-6 project-card project-card--featured">
             <div class="card bkg-color-bg-card px-4 py-2 m-0 rounded h-100">
               <div class="card-body d-flex flex-column justify-content-between">
-                <div class="project-card__header d-flex justify-content-between">
+                <div class="project-card__header d-flex justify-content-between align-items-start mb-1">
                     <h4 class="text-h3 text-normal color-text-primary" data-i18n="projects.survey.title"></h4>
                     <span class="chip chip--epsi">EPSI</span>
                 </div>
-                <p class="color-text-secondary" data-i18n="projects.survey.description"></p>
+                <p class="color-text-secondary flex-grow-1" data-i18n="projects.survey.description"></p>
                 <ul class="d-flex flex-wrap gap-2 chips-list">
                     <li class="chip chip--mono">.NET / C#</li>
                     <li class="chip chip--mono">Angular</li>
@@ -102,11 +102,11 @@
           <div class="col-6 project-card project-card--featured">
             <div class="card bkg-color-bg-card px-4 py-2 m-0 rounded h-100">
               <div class="card-body d-flex flex-column justify-content-between">
-                <div class="project-card__header d-flex justify-content-between align-items-start">
+                <div class="project-card__header d-flex justify-content-between align-items-start mb-1">
                     <h4 class="text-h3 color-text-primary" data-i18n="projects.hr.title"></h4>
                     <span class="chip chip--epsi">EPSI</span>
                 </div>
-                <p class="color-text-secondary" data-i18n="projects.hr.description"></p>
+                <p class="color-text-secondary flex-grow-1" data-i18n="projects.hr.description"></p>
                 <ul class="d-flex flex-wrap gap-2 chips-list">
                     <li class="chip chip--mono">.NET / C#</li>
                     <li class="chip chip--mono">SQL Server</li>
@@ -119,20 +119,20 @@
 
         </div>
 
-        <h3 class="text-h4 color-text-secondary border-bottom border-color pb-2 my-3" data-i18n="projects.personal"></h3>
+        <h3 class="text-xs text-normal color-text-secondary border-bottom border-color pb-2 my-3" data-i18n="projects.personal"></h3>
         <div class="projects-grid row align-items-stretch">
 
           <div class="col-6 project-card">
             <div class="card bkg-color-bg-card px-4 py-2 m-0 rounded h-100">
               <div class="card-body d-flex flex-column justify-content-between">
-                <div class="project-card__header d-flex justify-content-between">
+                <div class="project-card__header d-flex justify-content-between align-items-start mb-1">
                     <h4 class="text-h3 text-normal color-text-primary" data-i18n="projects.portfolio.title"></h4>
                     <a href="https://caudet1980.github.io/portfolio/"
                       class="chip chip--github" target="_blank">
                       GitHub ↗
                     </a>
                 </div>
-                <p class="color-text-secondary" data-i18n="projects.portfolio.description"></p>
+                <p class="color-text-secondary flex-grow-1" data-i18n="projects.portfolio.description"></p>
                 <ul class="chips-list d-flex flex-wrap gap-2">
                     <li class="chip chip--mono">HTML</li>
                     <li class="chip chip--mono">CSS</li>
@@ -146,13 +146,13 @@
         </div>
     </section>
       <section id="skills" class="container px-0 py-4">
-        <h2 class="text-h4 text-uppercase font-weight-light color-text-secondary" data-i18n="skills.title"></h2>
+        <h2 class="text-xs text-normaltext-uppercase font-weight-light color-text-secondary" data-i18n="skills.title"></h2>
 
         <div class="row g-3">
 
             <div class="col-4">
-                <div class="card skill-group bkg-color-bg-card p-3 rounded  h-100">
-                    <h4 class="text-uppercase" data-i18n="skills.backend"></h4>
+                <div class="card skill-group bkg-color-bg-card p-3 rounded h-100">
+                    <h4 class="text-xs text-uppercase" data-i18n="skills.backend"></h4>
                     <ul class="chips-list d-flex flex-wrap gap-2">
                         <li class="chip chip--mono">.NET / C#</li>
                         <li class="chip chip--mono">PHP</li>
@@ -166,7 +166,7 @@
 
             <div class="col-4">
                 <div class="card skill-group bkg-color-bg-card p-3 rounded h-100">
-                    <h4 class="text-uppercase" data-i18n="skills.frontend"></h4>
+                    <h4 class="text-xs text-uppercase" data-i18n="skills.frontend"></h4>
                     <ul class="chips-list d-flex flex-wrap gap-2">
                         <li class="chip chip--mono">Angular</li>
                         <li class="chip chip--mono">React</li>
@@ -180,7 +180,7 @@
 
             <div class="col-4">
                 <div class="card skill-group bkg-color-bg-card p-3 rounded h-100">
-                    <h4 class="text-uppercase" data-i18n="skills.tools"></h4>
+                    <h4 class="text-xs text-uppercase" data-i18n="skills.tools"></h4>
                     <ul class="chips-list d-flex flex-wrap gap-2">
                         <li class="chip chip--mono">Git</li>
                         <li class="chip chip--mono">Azure</li>
@@ -195,14 +195,14 @@
         </div>
       </section>
       <section id="contact" class="container border-top px-0 py-4">
-        <h2 class="text-h4 text-uppercase font-weight-light color-text-secondary" data-i18n="contact.title"></h2>
+        <h2 class="text-xs text-uppercase font-weight-light color-text-secondary" data-i18n="contact.title"></h2>
 
         <div class="row g-3">
 
             <div class="col-auto">
                 <a href="https://github.com/caudet1980"
                   target="_blank"
-                  class="btn btn-sm color-text-secondary bkg-color-bg-surface border-color">
+                  class="btn btn-sm color-text-secondary bkg-color-bg-surface border-color py-2 px-3">
                     GitHub
                 </a>
             </div>
@@ -210,14 +210,14 @@
             <div class="col-auto">
                 <a href="https://www.linkedin.com/in/catherineaudet/"
                   target="_blank"
-                  class="btn btn-sm color-text-secondary bkg-color-bg-surface border-color">
+                  class="btn btn-sm color-text-secondary bkg-color-bg-surface border-color py-2 px-3">
                     LinkedIn
                 </a>
             </div>
 
             <div class="col-auto">
                 <a href="mailto:cath_80@hotmail.com"
-                  class="btn btn-sm color-text-secondary bkg-color-bg-surface border-color">
+                  class="btn btn-sm color-text-secondary bkg-color-bg-surface border-color py-2 px-3">
                     cath_80@hotmail.com
                 </a>
             </div>

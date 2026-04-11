@@ -1,6 +1,5 @@
 {
     "header": {
-        "name": "Catherine Audet",
         "nav": {
             "projects": "Projects",
             "skills": "Skills",
@@ -9,7 +8,7 @@
         }
     },
     "intro": {
-        "title": "Catherine Audet - Senior Full Stack Developer",
+        "title": "Senior Full Stack Developer",
         "subtitle": "10 years of code. From backend to frontend.",
         "summary1": "Senior full stack developer with 10+ years of experience, I build applications from API to interface.",
         "summary2": "I continuously upskill to stay current with the industry.",

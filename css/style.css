@@ -3,7 +3,6 @@
   Portfolio de Catherine Audet
   style.css
 ----------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
 
 /*----------------------------
@@ -15,12 +14,16 @@
     --font-mono: 'JetBrains Mono', monospace;
     
     /* Tailles de texte */
+    --text-xs:   0.75rem;
     --text-sm:   0.875rem;  /* 14px — descriptions */
-    --text-2xl:  1.5rem;    /* 24px */
+    --text-2xl:  2rem;    /* 24px */
     
     /* Tailles de titres */
-    --text-h3: 1.125rem;  /* 18px — titres de cartes projets */
-    --text-h4: 0.875rem;  /* 14px — titres groupes compétences */
+    --text-h1: 2.25rem;   /* 36px — ton nom */
+    --text-h2: 1.75rem;   /* 28px — titre de section */
+    --text-h3: 1.25rem;   /* 20px — tagline hero */
+    --text-h4: 1.125rem;  /* 18px — titres de cartes projets */
+    --text-h5: 0.875rem;  /* 14px — titres groupes compétences */
     
     /* Arrière-plans */
     --color-bg-dark:    #1A1A1A;  /* fond général */
@@ -62,7 +65,7 @@ h1 {
 
 h2 {
     font-family: var(--font-primary);
-    font-size: 1.75rem;
+    font-size: var(--text-h2);
     font-weight: 500;
     color: var(--color-text-primary);
     line-height: 1.3;
@@ -99,9 +102,18 @@ nav a {
     color: var(--color-text-secondary);
 }
 
+.accent-bar {
+    height: 4px;
+    background-color: var(--color-accent);
+    width: 100%;
+}
 /*----------------------------
  * Typographie
 ----------------------------*/
+.text-xs {
+    font-size: var(--text-xs);
+}
+
 .text-sm {
     font-size: var(--text-sm);
 }
@@ -110,12 +122,20 @@ nav a {
     font-size: var(--text-2xl);
 }
 
+.text-h2 {
+    font-size: var(--text-h2);
+}
+
 .text-h3 {
     font-size: var(--text-h3);
 }
 
 .text-h4 {
     font-size: var(--text-h4);
+}
+
+.text-h5 {
+    font-size: var(--text-h5);
 }
 
 .text-normal {
@@ -199,6 +219,7 @@ nav a {
     font-family: var(--font-mono);
     font-size: 0.75rem;
     font-weight: 500;
+    white-space: nowrap;
 }
 
 .chip--mono    { background: var(--color-bg-surface); color: var(--color-text-secondary); border: 1px solid var(--bs-border-color); }
@@ -208,4 +229,4 @@ nav a {
 .chip--react   { background: #0D2420; color: #5DCAA5; }
 .chip--web     { background: var(--color-bg-surface); color: var(--color-text-secondary); }
 .chip--epsi    { background: var(--color-accent-dark); color: var(--color-accent-light); }
-.chip--github  { background: var(--color-bg-surface); color: var(--color-text-secondary); border: 1px solid var(--bs-border-color); }
+.chip--github  { background: #0D2420; color: #5DCAA5; border: 1px solid var(--bs-border-color); }

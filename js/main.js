@@ -51,8 +51,11 @@ async function loadLanguage(lang) {
  * Bascule entre les langues (FR ↔ EN)
  */
 function toggleLanguage() {
-    const newLang = currentLang === 'en' ? 'fr' : 'en';
-    loadLanguage(newLang);
+    currentLang = currentLang === 'en' ? 'fr' : 'en';
+    loadLanguage(currentLang);
+   
+    document.getElementById('language-select').textContent = 
+        currentLang === 'fr' ? 'EN' : 'FR';   
 }
 
 /*----------------------------

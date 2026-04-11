@@ -1,6 +1,5 @@
 {
     "header": {
-        "name": "Catherine Audet",
         "nav": {
             "projects": "Projets",
             "skills": "Compétences",
@@ -9,7 +8,7 @@
         }
     },
     "intro": {
-        "title": "Catherine Audet - Développeuse Full Stack Senior",
+        "title": "Développeuse Full Stack Senior",
         "subtitle": "10 ans de code. Du backend au frontend.",
         "summary1": "Développeuse full stack senior avec plus de 10 ans d'expérience, je conçois des applications de l'API à l'interface.",
         "summary2": "Curieuse et rigoureuse, je me forme continuellement pour rester à jour.",
