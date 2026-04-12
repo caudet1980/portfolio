@@ -9,9 +9,9 @@ const LANG_ATTR = 'data-i18n';
  * Fonctions utilitaires
 ----------------------------*/
 /**
- * Récupère une traduction imbriquée par clé pointée
+ * Récupère une traduction imbriquée par clé
  * @param {Object} translations - Objet de traductions
- * @param {String} key - Clé pointée (ex: "header.nav.projects")
+ * @param {String} key - Clé (ex: "header.nav.projects")
  * @returns {String|null} Valeur traduite ou null
  */
 function getTranslation(translations, key) {
@@ -69,3 +69,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const langButton = document.getElementById('language-select');
     langButton.addEventListener('click', toggleLanguage);
 });
+
+/*----------------------------
+ * Animations
+----------------------------*/
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        console.log('Intersection:', entry.target, 'isIntersecting:', entry.isIntersecting);
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+        }
+    });
+}, {
+    threshold: 0.3
+});
+
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
