@@ -45,6 +45,10 @@
         "portfolio": {
             "title": "Portfolio personnel",
             "description": "Portfolio bilingue FR/EN en vanilla JS — système de traduction JSON, bascule de langue, dark mode."
+        },
+        "projectManagement": {
+            "title": "Gestionnaire de projets",
+            "description": "Application full-stack de gestion de projets — authentification JWT, création de projets et tâches, validation de formulaires et notifications. Interface bilingue FR/EN déployée sur Vercel et Railway."
         }
     },
     "skills": {

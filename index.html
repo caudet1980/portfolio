@@ -53,22 +53,28 @@
       <section id="stats" class="container px-0 py-4 border-bottom border-color ">
         <h2 class="text-xs text-uppercase font-weight-light color-text-secondary fade-in" data-i18n="stats.title"></h2>
         <ul class="stats-list d-flex gap-4 px-0">
-          <li class="stat-item card bkg-color-bg-card px-3 py-2 m-0 fade-in">
-            <div class="card-body">
-              <h5 class="stat-label text-sm color-text-secondary" data-i18n="stats.experience.label"></h5>
-              <p class="stat-value text-2xl accent font-weight-bold m-0" data-i18n="stats.experience.value"></p>
+          <li class="stat-item fade-in">
+            <div class="card bkg-color-bg-card px-3 py-2 m-0 h-100">
+              <div class="card-body">
+                <h5 class="stat-label text-sm color-text-secondary" data-i18n="stats.experience.label"></h5>
+                <p class="stat-value text-2xl accent font-weight-bold m-0" data-i18n="stats.experience.value"></p>
+              </div>
             </div>
           </li>
-          <li class="stat-item card bkg-color-bg-card px-3 py-2 m-0 fade-in">
+          <li class="stat-item fade-in">
+            <div class="card bkg-color-bg-card px-3 py-2 m-0 h-100">
               <div class="card-body">
-              <h5 class="stat-label text-sm color-text-secondary" data-i18n="stats.training.label"></h5>
+                <h5 class="stat-label text-sm color-text-secondary" data-i18n="stats.training.label"></h5>
                 <p class="stat-value text-2xl accent font-weight-bold m-0" data-i18n="stats.training.value"></p>
               </div>
+            </div>
           </li>
-          <li class="stat-item card bkg-color-bg-card px-3 py-2 m-0 fade-in">
-            <div class="card-body">
-              <h5 class="stat-label text-sm color-text-secondary" data-i18n="stats.technologies.label"></h5>
-              <p class="stat-value text-2xl accent font-weight-bold m-0" data-i18n="stats.technologies.value"></p>
+          <li class="stat-item fade-in">
+            <div class="card bkg-color-bg-card px-3 py-2 m-0 h-100">
+              <div class="card-body">
+                <h5 class="stat-label text-sm color-text-secondary" data-i18n="stats.technologies.label"></h5>
+                <p class="stat-value text-2xl accent font-weight-bold m-0" data-i18n="stats.technologies.value"></p>
+              </div>
             </div>
           </li>
         </ul>
@@ -100,7 +106,7 @@
           </div>
 
           <div class="project-card col-6 project-card--featured fade-in">
-            <div class="card bkg-color-bg-card px-4 py-2 m-0 rounded h-100 fade-in">
+            <div class="card bkg-color-bg-card px-4 py-2 m-0 rounded h-100">
               <div class="card-body d-flex flex-column justify-content-between">
                 <div class="project-card__header d-flex justify-content-between align-items-start mb-1">
                     <h4 class="text-h3 color-text-primary" data-i18n="projects.hr.title"></h4>
@@ -143,6 +149,35 @@
               </div>
             </div>
           </div>
+
+          <div class="project-card col-6 fade-in">
+            <div class="card bkg-color-bg-card px-4 py-2 m-0 rounded h-100">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <div class="project-card__header d-flex justify-content-between align-items-start mb-1">
+                    <h4 class="text-h3 text-normal color-text-primary" data-i18n="projects.projectManagement.title"></h4>
+                    <div class="d-flex gap-2">
+                      <a href="https://github.com/caudet1980/project-management"
+                        class="chip chip--github" target="_blank">
+                        GitHub ↗
+                      </a>
+                      <a href="https://project-management-tan-iota.vercel.app"
+                        class="chip chip--github" target="_blank">
+                        Demo ↗
+                      </a>
+                    </div>
+                </div>
+                <p class="color-text-secondary flex-grow-1" data-i18n="projects.projectManagement.description"></p>
+                <ul class="chips-list d-flex flex-wrap gap-2">
+                    <li class="chip chip--mono">React</li>
+                    <li class="chip chip--mono">.NET / C#</li>
+                    <li class="chip chip--mono">SQLite</li>
+                    <li class="chip chip--mono">Entity Framework</li>
+                    <li class="chip chip--mono">JWT</li>
+                    <li class="chip chip--mono">Axios</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
     </section>
       <section id="skills" class="container px-0 py-4">
@@ -150,8 +185,8 @@
 
         <div class="row g-3">
 
-            <div class="col-4">
-                <div class="skill-group card bkg-color-bg-card p-3 rounded h-100 fade-in">
+            <div class="col-4 fade-in">
+                <div class="skill-group card bkg-color-bg-card p-3 rounded h-100">
                     <h4 class="text-xs text-uppercase" data-i18n="skills.backend"></h4>
                     <ul class="chips-list d-flex flex-wrap gap-2">
                         <li class="chip chip--mono">.NET / C#</li>
@@ -164,8 +199,8 @@
                 </div>
             </div>
 
-            <div class="col-4">
-                <div class="skill-group card bkg-color-bg-card p-3 rounded h-100 fade-in">
+            <div class="col-4 fade-in">
+                <div class="skill-group card bkg-color-bg-card p-3 rounded h-100">
                     <h4 class="text-xs text-uppercase" data-i18n="skills.frontend"></h4>
                     <ul class="chips-list d-flex flex-wrap gap-2">
                         <li class="chip chip--mono">Angular</li>
@@ -178,8 +213,8 @@
                 </div>
             </div>
 
-            <div class="col-4">
-                <div class="skill-group card bkg-color-bg-card p-3 rounded h-100 fade-in">
+            <div class="col-4 fade-in">
+                <div class="skill-group card bkg-color-bg-card p-3 rounded h-100">
                     <h4 class="text-xs text-uppercase" data-i18n="skills.tools"></h4>
                     <ul class="chips-list d-flex flex-wrap gap-2">
                         <li class="chip chip--mono">Git</li>
