@@ -4,6 +4,7 @@
 let currentLang = 'fr';
 const LANG_PATH = 'lang';
 const LANG_ATTR = 'data-i18n';
+const LANG_VERSION = '1.2';
 
 /*----------------------------
  * Fonctions utilitaires
@@ -27,7 +28,7 @@ function getTranslation(translations, key) {
  */
 async function loadLanguage(lang) {
     try {
-        const response = await fetch(`${LANG_PATH}/${lang}.json`);
+        const response = await fetch(`${LANG_PATH}/${lang}.json?v=${LANG_VERSION}`);
         const translations = await response.json();
 
         // Appliquer les traductions à tous les éléments avec data-i18n
